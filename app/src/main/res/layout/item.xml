@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="3dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="4dp"
+    android:backgroundTint="?attr/cardBack"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_marginTop="10dp"
+            >
+
+            <CheckBox
+                android:id="@+id/todo_checkbox"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:buttonTint="#2389FF"
+                android:paddingStart="4dp" />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/iosevka_light_extended"
+
+                android:id="@+id/task_name"
+                android:text="asaa"
+                android:textSize="18dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="175dp"
+            android:maxHeight="16dp"
+            android:textColor="?attr/colorPreferenceFore"
+            android:textSize="12dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="34dp"
+            android:ellipsize="end"
+            android:layout_below="@id/linear"
+            android:id="@+id/task_description"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:id="@+id/tdate"
+            android:layout_alignParentRight="true"
+            android:textColor="?attr/colorPreferenceFore"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="end"
+            android:text=""
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="12dp"
+            android:id="@+id/ttime"
+            android:layout_marginBottom="15dp"
+            android:textColor="?attr/colorPreferenceFore"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="end"
+            android:text=""
+            />
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

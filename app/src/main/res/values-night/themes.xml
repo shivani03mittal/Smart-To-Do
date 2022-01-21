@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/purple_200</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+<!--        <item name="colorOnPrimary">@color/black</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_200</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+
+
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--    </style>-->
+
+
+    <!--        DARK MODE COLORS-->
+    <style name="Theme.SplashScreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#FFF8EC</item>
+        <item name="colorPrimaryVariant">#B2B2B2</item>
+        <item name="colorOnPrimary">#22201F</item>
+
+        <item name="colorSecondary">#1C1C1C</item>
+        <item name="colorSecondaryVariant">#282828</item>
+        <item name="colorOnSecondary">#D7DBF8</item>
+
+        <item name="colorPreferenceBack">#2F2F2F</item>
+        <item name="colorPreferenceFore">#C3DDEA</item>
+        <item name="colorPreferenceLine">#6DBCBA</item>
+
+        <item name="navHeadBack">#1E3E76</item>
+        <item name="cardBack">#807A00AE</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/gradient_start</item>
+    </style>
+
+    <style name="Theme.SplashScreen.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+
+    </style>
+    <style name="DialogStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+</resources>

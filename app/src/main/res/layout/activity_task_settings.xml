@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskSettings"
+    android:background="?attr/colorPreferenceBack"
+    >
+
+    <LinearLayout
+        android:id="@+id/ts1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:onClick="popTaskName"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/task" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Taskname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Task Name"
+                android:textColor="?attr/colorPreferenceFore"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tasknameDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Task Name Desc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts1"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts1"
+        android:id="@+id/ts2"
+        android:onClick="popTaskDesc"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/desc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskDescription"
+                android:text="Task Description"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskSettingDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Edit Task Description"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts2"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts2"
+        android:id="@+id/ts3"
+        android:onClick="popDatePicker"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/calendar"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskDate"
+                android:text="Task Date"
+                android:textStyle="bold"
+                android:textSize="15dp"
+
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskDateDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Edit Task Date"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts3"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts3"
+        android:id="@+id/ts4"
+        android:onClick="popTimePicker"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/clock"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskTime"
+                android:text="Task Time"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskTimeDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Edit task time"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts4"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts4"
+        android:id="@+id/ts5"
+        android:onClick="popTaskPriority"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/priority"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskPriority"
+                android:text="Task Priority"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskPriorityDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Task Priority Desc"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts5"
+        android:background="?attr/colorPreferenceLine" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+
+        android:layout_below="@+id/ts5"
+        android:id="@+id/ts6"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+
+            android:id="@+id/copyLink"
+            android:src="@drawable/link"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:onClick="popTaskLink"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskLink"
+                android:text="Task Link"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskLinkDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Task Link"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts6"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts6"
+        android:id="@+id/ts7"
+        android:onClick="popTaskLocation"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/location"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskLocation"
+                android:text="Task Location"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskLocationDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Task Location"/>
+
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/map_button"
+            android:src="@drawable/ic_baseline_map_24"
+            android:layout_marginLeft="170dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts7"
+        android:background="?attr/colorPreferenceLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/ts7"
+        android:id="@+id/ts8"
+
+        >
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="8dp"
+            android:src="@drawable/task"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskStatus"
+                android:text="Task Status"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="?attr/colorPreferenceFore"
+                android:paddingLeft="20dp"/>
+            <TextView
+                android:id="@+id/taskStatusDesc"
+                android:textColor="?attr/colorPreferenceFore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:paddingLeft="20dp"
+                android:text="Task Status Desc"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/ts8"
+        android:background="?attr/colorPreferenceLine" />
+
+
+
+
+
+
+</RelativeLayout>

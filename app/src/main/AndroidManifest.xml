@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.splashscreen">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA2" />
+    <uses-permission android:name="android.hardware.camera2" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.full" />
+    <uses-permission android:name="android.hardware.camera2.full" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SplashScreen">
+        <activity
+            android:name=".TaskLocation"
+            android:exported="false"
+            android:parentActivityName=".TaskSettings"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ProfilePage"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/title_profile_page"
+            android:parentActivityName=".HomeActivity"
+            android:theme="@style/Theme.SplashScreen" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:configChanges="uiMode"
+            android:exported="false"
+            android:label="Preferences"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".Notifications"
+            android:exported="false"
+            android:label="Notifications"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".LogInActivity" />
+        <activity
+            android:name=".ListSettings"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TaskSettings"
+            android:exported="true"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".TabSettings"
+            android:exported="true"
+            android:label="@string/title_activity_tab_settings"
+            android:parentActivityName=".ListSettings" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:label=""
+            android:parentActivityName=".LogInActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SplashScreen.NoActionBar" />
+        <activity
+            android:name=".LogInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".DeviceBootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="notification.ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+
+</manifest>

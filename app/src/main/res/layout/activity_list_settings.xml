@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListSettings"
+    android:background="@drawable/gradient_center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="@color/white"
+        android:id="@+id/color_layout"
+        >
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="List Name"
+        android:paddingLeft="5dp"
+        android:paddingBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/list_name"
+        android:textSize="25dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/list_name"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/color_pick"
+        android:hint="Enter a name for your list"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/color_pick"
+        android:paddingTop="40dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Color"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/gradient_2"
+        android:id="@+id/color_button"/>
+
+
+
+
+    </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/next_list"
+            android:text="Next"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

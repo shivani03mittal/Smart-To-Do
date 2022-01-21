@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_profile"
+            android:icon="@drawable/navbar_person"
+
+            android:iconTint="@color/white"
+            android:title="Profile" />
+
+    </group>
+<!--    <item android:id="@+id/team"-->
+<!--        android:title="Teams">-->
+<!--        <menu>-->
+<!--            <group>-->
+<!--                <item android:id="@+id/team1"-->
+<!--                    android:icon="@drawable/navbar_people"-->
+<!--                    android:title="M.A.D"/>-->
+<!--                <item android:id="@+id/team2"-->
+<!--                    android:icon="@drawable/navbar_people"-->
+<!--                    android:title="Team 2"/>-->
+<!--                <item android:id="@+id/nav_new_team"-->
+<!--                    android:icon="@drawable/add"-->
+<!--                    android:title="New Team"/>-->
+<!--            </group>-->
+<!--        </menu>-->
+<!--    </item>-->
+
+    <item android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        android:iconTint="#fff"
+        android:iconTintMode="multiply"/>
+    <item android:id="@+id/theme"
+        android:icon="@drawable/theme"
+        android:title="Switch Day/Night mode"
+        />
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+</menu>

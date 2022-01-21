@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task_update">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Settings"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/update_title"
+        android:backgroundTint="@color/color_transparent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_title"
+        android:layout_marginTop="8dp"
+        android:id="@+id/update_taskname"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textSize="13dp"
+        android:text="Task Name"
+        android:textAlignment="center"
+        android:backgroundTint="@color/color_transparent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_taskname"
+        android:textSize="13dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/update_desc"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Task Desc"
+        android:backgroundTint="@color/color_transparent"
+        android:textAlignment="center"
+        />
+
+
+
+</RelativeLayout>

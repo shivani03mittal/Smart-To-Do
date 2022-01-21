@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <!--        android:background="@color/gradient_2"-->
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageview_profile"-->
+        <!--            android:layout_width="170dp"-->
+        <!--            android:layout_height="170dp"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:background="@drawable/circleimage"-->
+        <!--            android:src="@drawable/personprofile" />-->
+        <!--        android:background="#C8D5D5"-->
+        <!--        android:src="@drawable/personprofile"-->
+        <!--        android:src="@drawable/personprofile"-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageview_profile"
+            android:layout_centerInParent="true"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:src="@drawable/personprofile"
+            app:civ_circle_background_color="#C8D5D5"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingpicchanger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imageview_profile"
+            android:layout_alignBottom="@id/imageview_profile"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#35BA92"
+            android:elevation="2dp"
+            android:src="@drawable/photocam"
+            app:tint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel1"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/navbar_person" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@id/iv1"
+            android:text="Name"
+            android:textColor="#9E9A9A"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/tvname"
+            android:src="@drawable/edit_icon" />
+
+        <TextView
+            android:id="@+id/tvname2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvname"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="3dp"
+            android:textColor="?attr/colorPreferenceFore"
+            android:background="@drawable/underline"
+            android:text=""
+            android:textSize="20dp" />
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/emailid" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/iv2"
+            android:text="Email Id"
+            android:textColor="#9E9A9A"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/email"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="3dp"
+            android:textColor="?attr/colorPreferenceFore"
+            android:background="@drawable/underline"
+            android:text=""
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

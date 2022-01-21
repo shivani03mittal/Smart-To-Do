@@ -1,0 +1,74 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <Preference
+        app:icon="@drawable/task"
+        app:key="tasks"
+        app:summary="Tap to add a task"
+        app:title="Tasks"
+        >
+    </Preference>
+    <Preference
+        app:icon="@drawable/subtask"
+        app:key="subtasks"
+        app:summary="Tap to add a subtask"
+        app:title="Sub-Tasks">
+
+    </Preference>
+
+    <EditTextPreference
+        app:defaultValue="No date entered"
+        app:icon="@drawable/calendar"
+        app:key="date"
+        app:title="Due Date"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:defaultValue="No time entered"
+        app:icon="@drawable/clock"
+        app:key="date"
+        app:title="Time"
+        app:useSimpleSummaryProvider="true" />
+
+    <MultiSelectListPreference
+        android:entries="@array/days"
+        android:entryValues="@array/days_value"
+        app:icon="@drawable/repeat"
+        app:key="days"
+        app:summary="Select days to repeat the reminder"
+        app:title="Repeat" />
+
+    <DropDownPreference
+        android:entries="@array/priority"
+        android:entryValues="@array/priority_values"
+        app:icon="@drawable/priority"
+        app:key="priority"
+        app:title="Priority"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:icon="@drawable/link"
+        app:key="link"
+        app:title="Add meeting link"
+        app:useSimpleSummaryProvider="true" />
+
+    <Preference
+        app:icon="@drawable/location"
+        app:key="location"
+        app:summary="Add a location"
+        app:title="Add location">
+
+    </Preference>
+
+    <Preference
+        app:icon="@drawable/ic_baseline_bookmark_24"
+        app:key="tags"
+        app:title="Tags">
+
+    </Preference>
+
+
+
+</PreferenceScreen>

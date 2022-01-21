@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "603989710404",
+    "project_id": "smart-to-do-app",
+    "storage_bucket": "smart-to-do-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603989710404:android:a6a41db1f221a6fe968e11",
+        "android_client_info": {
+          "package_name": "com.example.splashscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603989710404-fk7v56nej8n4ehjpvda4b06v1vebrrgr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArp9RHlvoDG43uLwZTeTWNQVE2QVOG8Nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603989710404-fk7v56nej8n4ehjpvda4b06v1vebrrgr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

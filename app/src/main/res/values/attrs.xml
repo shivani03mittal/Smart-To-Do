@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DarkTheme">
+        <attr name="colorDarkHeader" format="color"/>
+        <attr name="colorText1" format="color"/>
+        <attr name="colorText2" format="color"/>
+        <attr name="colorBackground1" format="color"/>
+        <attr name="colorPreferenceBack" format="color"/>
+        <attr name="colorPreferenceFore" format="color"/>
+        <attr name="colorPreferenceLine" format="color"/>
+        <attr name="navHeadBack" format="color"/>
+        <attr name="cardBack" format="color"/>
+        <attr name="homeBack" format="color"/>
+
+    </declare-styleable>
+
+</resources>

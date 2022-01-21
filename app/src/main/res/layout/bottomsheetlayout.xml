@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet_layout"
+    android:background="@drawable/dialog_bg">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Task_Name"
+        android:layout_margin="5dp"
+        android:hint="New task"
+        android:height="30dp"
+        android:textColorHint="#9D9B9B"
+        android:textColor="?attr/colorOnSecondary"
+        android:background="@android:color/transparent"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="30dp"
+        android:layout_below="@id/Task_Name"
+        android:id="@+id/Task_Desc"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:layout_margin="4dp"
+        android:textColorHint="#9B9A9A"
+        android:textColor="?attr/colorOnSecondary"
+        android:hint="Description"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Task_Desc"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:text="" />
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/dateTV"
+        android:layout_below="@+id/Task_Desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Task_Desc"
+        android:layout_marginTop="25dp"
+        android:id="@+id/task_date"
+        android:layout_marginLeft="10dp"
+
+        android:src="@drawable/calendar" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Task_Desc"
+        android:layout_marginTop="25dp"
+        android:id="@+id/task_time"
+        android:layout_marginLeft="50dp"
+
+        android:src="@drawable/clock" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Task_Desc"
+        android:text="Save"
+        android:textSize="13dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="?attr/navHeadBack"
+        android:id="@+id/task_save"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Task_Desc"
+        android:layout_marginTop="25dp"
+        android:id="@+id/task_link"
+        android:layout_marginLeft="90dp"
+
+        android:src="@drawable/link" />
+</RelativeLayout>
+

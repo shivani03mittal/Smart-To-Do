@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilecam_dialogue_bg">
+
+    <TextView
+        android:id="@+id/choosetxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Profile Photo"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/choosetxt"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/circleimage"
+        android:backgroundTint="#FF5722"
+        android:scaleType="centerInside"
+        android:src="@drawable/delete"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/iv_gallery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/choosetxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/iv_delete"
+        android:background="@drawable/circleimage"
+        android:backgroundTint="@color/gradient_2"
+        android:scaleType="centerInside"
+        android:src="@drawable/galary" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/choosetxt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/iv_gallery"
+        android:background="@drawable/circleimage"
+        android:backgroundTint="#E91E63"
+        android:scaleType="centerInside"
+        android:src="@drawable/photocam"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_delete"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/remove"
+        android:textColor="?attr/colorPreferenceFore"
+        android:text="Remove\nphoto" />
+
+    <TextView
+        android:id="@+id/gal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_gallery"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/colorPreferenceFore"
+        android:layout_toRightOf="@+id/remove"
+        android:text="Gallery" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_camera"
+        android:layout_toRightOf="@id/gal"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/colorPreferenceFore"
+        android:text="Camera" />
+
+</RelativeLayout>
